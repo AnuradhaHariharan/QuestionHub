@@ -3,7 +3,6 @@ import cors from "cors"
 import { connectDb } from "./Config/db.js"
 import userRouter from "./routes/userRoute.js"
 import 'dotenv/config'
-import adminRouter from "./routes/adminRoute.js"
 import projectRouter from "./routes/projectRoute.js"
 
 
@@ -22,7 +21,6 @@ connectDb();
 
 //api endpoint
 app.use("/api/user",userRouter)
-app.use("/api/admin",adminRouter)
 app.use("/api/projects",projectRouter)
 
 
