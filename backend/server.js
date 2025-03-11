@@ -1,7 +1,6 @@
 import express from "express"
 import cors from "cors"
 import { connectDb } from "./Config/db.js"
-import userRouter from "./routes/userRoute.js"
 import 'dotenv/config'
 import projectRouter from "./routes/projectRoute.js"
 
@@ -19,8 +18,7 @@ app.use(cors())
 //db connection
 connectDb();
 
-//api endpoint
-app.use("/api/user",userRouter)
+
 app.use("/api/projects",projectRouter)
 
 
