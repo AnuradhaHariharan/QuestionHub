@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
-import './projects.css'; // Import your CSS file for styling
+import './Projects.css'; // Import your CSS file for styling
 import { StoreContext } from '../../context/StoreContext'; // Import the context
 import axios from 'axios';
 
